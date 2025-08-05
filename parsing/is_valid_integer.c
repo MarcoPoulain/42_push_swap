@@ -6,7 +6,7 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 15:58:28 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/04 17:38:03 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/05 12:38:40 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ int	is_valid_argument(char *str)
 		return (0);
 	return (1);
 }
-/*
+
 int	contains_space(char *str)
 {
 	while (*str)
@@ -83,7 +83,7 @@ int	contains_space(char *str)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 int	main(int argc, char **argv)
 {

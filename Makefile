@@ -3,8 +3,9 @@ CC		= cc
 CFLAGS	= -Wall -Wextra -Werror -I .
 
 SRC =	main.c \
+		parsing/is_valid_integer.c \
+		parsing/parse_args_utils.c \
 		parsing/parse_args.c \
-		parsing/check_errors.c \
 		instructions/push.c \
 		instructions/rotate.c \
 		instructions/reverse_rotate.c\
