@@ -6,7 +6,7 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 13:36:20 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/05 15:02:10 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/05 15:13:49 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ void	free_split(char **split)
 char	**prepare_args(int argc, char **argv, int *count, int *need_free)
 {
 	char	**args;
-	int		i;
 
 	*need_free = 0;
 	if (argc == 2 && contains_space(argv[1]))
@@ -106,4 +105,5 @@ int	check_duplicates(t_stack *a)
 		}
 		i++;
 	}
+	return (1);
 }

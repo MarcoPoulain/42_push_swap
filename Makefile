@@ -6,17 +6,17 @@ SRC =	main.c \
 		parsing/is_valid_integer.c \
 		parsing/parse_args_utils.c \
 		parsing/parse_args.c \
-		instructions/push.c \
-		instructions/rotate.c \
-		instructions/reverse_rotate.c\
-		instructions/swap.c \
-		sort/sort_small.c \
-		sort/complex_sort.c \
-		utils/stack_utils.c \
 		utils/ft_atoi.c \
 		utils/ft_isdigit.c \
 		utils/ft_strlen.c \
 		utils/ft_split.c
+		# instructions/push.c \
+		# instructions/rotate.c \
+		# instructions/reverse_rotate.c\
+		# instructions/swap.c \
+		# sort/sort_small.c \
+		# sort/complex_sort.c \	
+		# utils/stack_utils.c \
 
 OBJ = $(SRC:.c=.o)
 
