@@ -9,11 +9,11 @@ SRC =	main.c \
 		utils/ft_atoi.c \
 		utils/ft_isdigit.c \
 		utils/ft_strlen.c \
-		utils/ft_split.c
-		# instructions/push.c \
-		# instructions/rotate.c \
-		# instructions/reverse_rotate.c\
-		# instructions/swap.c \
+		utils/ft_split.c \
+		instructions/swap.c \
+		instructions/push.c \
+		instructions/rotate.c \
+		instructions/reverse_rotate.c
 		# sort/sort_small.c \
 		# sort/complex_sort.c \	
 		# utils/stack_utils.c \
