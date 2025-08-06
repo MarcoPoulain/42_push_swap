@@ -13,8 +13,8 @@ SRC =	main.c \
 		instructions/swap.c \
 		instructions/push.c \
 		instructions/rotate.c \
-		instructions/reverse_rotate.c
-		# sort/sort_small.c \
+		instructions/reverse_rotate.c \
+		sort/sort_small.c
 		# sort/complex_sort.c \	
 		# utils/stack_utils.c \
 

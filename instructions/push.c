@@ -6,7 +6,7 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 13:30:18 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/06 13:40:34 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/06 16:45:56 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static void	push(t_stack *src, t_stack *dest)
 		i = 0;
 		while (i < src->size - 1)
 		{
-			src->tab[i] = src->tab[i+1];
+			src->tab[i] = src->tab[i + 1];
 			i++;
 		}
 		src->size--;
