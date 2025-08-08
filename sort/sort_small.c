@@ -6,13 +6,13 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 16:39:59 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/06 17:10:43 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/08 14:47:13 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	sort_two(t_stack *a)
+static void	sort_2(t_stack *a)
 {
 	int	first;
 	int	second;
@@ -25,7 +25,7 @@ void	sort_two(t_stack *a)
 		sa(a);
 }
 
-void	sort_three(t_stack *a)
+static void	sort_3(t_stack *a)
 {
 	int	first;
 	int	second;
@@ -52,4 +52,35 @@ void	sort_three(t_stack *a)
 	}
 	else if (first < second && second > third && first > third)
 		rra(a);
+}
+
+static void	sort_4(t_stack *a, t_stack *b)
+{
+	move_smallest_to_top(a, 'a');
+	pb(a, b);
+	sort_3(a);
+	pa(a, b);
+}
+
+static void	sort_5(t_stack *a, t_stack *b)
+{
+	move_smallest_to_top(a, 'a');
+	pb(a, b);
+	move_smallest_to_top(a, 'a');
+	pb(a, b);
+	sort_3(a);
+	pa(a, b);
+	pa(a, b);
+}
+
+void	sort_small(t_stack *a, t_stack *b)
+{
+	if (a->size == 2)
+		sort_2(a);
+	else if (a->size == 3)
+		sort_3(a);
+	else if (a->size == 4)
+		sort_4(a, b);
+	else if (a->size == 5)
+		sort_5(a, b);
 }

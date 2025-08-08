@@ -6,7 +6,7 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:10:38 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/06 17:11:28 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/08 15:05:14 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,14 +45,14 @@ int	main(int argc, char **argv)
 	if (stack_a.size == 2)
 	{
 		print_stack(&stack_a);
-		sort_two(&stack_a);
+		sort_small(&stack_a, &stack_b);
 		print_stack(&stack_a);
 	}
 	else if (stack_a.size == 3)
 	{
 
 		print_stack(&stack_a);
-		sort_three(&stack_a);
+		sort_small(&stack_a, &stack_b);
 		print_stack(&stack_a);
 	}
 	else
@@ -70,7 +70,7 @@ int	main(int argc, char **argv)
 		printf("size stack a: %d\n", stack_a.size);
 		print_stack(&stack_b);
 	}
-	free(stack_a.tab);
-	free(stack_b.tab);
+	free_stack(&stack_a);
+	free_stack(&stack_b);
 	return (0);
 }
