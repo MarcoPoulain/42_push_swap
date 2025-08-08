@@ -6,7 +6,7 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 14:06:42 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/08 14:58:01 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/08 16:20:46 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ static void	move_smallest_down(t_stack *stack, int index, char which_stack)
 			rrb(stack);
 		i++;
 	}
-
 }
 
 void	move_smallest_to_top(t_stack *stack, char which_stack)
