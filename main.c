@@ -6,7 +6,7 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:10:38 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/08 15:05:14 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/11 16:38:23 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,33 +42,17 @@ int	main(int argc, char **argv)
 		return (1);
 	}
 	stack_b.size = 0;
-	if (stack_a.size == 2)
+	if (stack_a.size <= 5)
 	{
 		print_stack(&stack_a);
 		sort_small(&stack_a, &stack_b);
 		print_stack(&stack_a);
 	}
-	else if (stack_a.size == 3)
+	else if ( stack_a.size > 5)
 	{
-
 		print_stack(&stack_a);
-		sort_small(&stack_a, &stack_b);
+		sort_big(&stack_a, &stack_b);
 		print_stack(&stack_a);
-	}
-	else
-	{
-		printf("size stack a: %d\n", stack_a.size);
-		print_stack(&stack_a);
-		print_stack(&stack_b);
-		pb(&stack_a, &stack_b);
-		pb(&stack_a, &stack_b);
-		pb(&stack_a, &stack_b);
-		pb(&stack_a, &stack_b);
-		ra(&stack_a);
-		rrb(&stack_b);
-		print_stack(&stack_a);
-		printf("size stack a: %d\n", stack_a.size);
-		print_stack(&stack_b);
 	}
 	free_stack(&stack_a);
 	free_stack(&stack_b);

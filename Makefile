@@ -16,9 +16,9 @@ SRC =	main.c \
 		instructions/reverse_rotate.c \
 		sort/sort_small.c \
 		sort/sort_small_utils.c \
-		sort/sort_utils.c
-		# sort/complex_sort.c \	
-		# utils/stack_utils.c \
+		sort/sort_utils.c \
+		sort/sort_big_utils.c \
+		sort/sort_big.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 13:51:36 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/08 15:05:58 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/11 16:34:44 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,15 @@ void	rra(t_stack *a);
 void	rrb(t_stack *b);
 void	rrr(t_stack *a, t_stack *b);
 void	sort_small(t_stack *a, t_stack *b);
+void	sort_big(t_stack *a, t_stack *b);
 void	move_smallest_to_top(t_stack *stack, char which_stack);
 int		is_sorted(t_stack *stack);
 void	free_stack(t_stack *stack);
+void	bubble_sort(int *tab, int size);
+t_stack	*tab_duplicate(t_stack *tabsrc);
+void	map_in_place(t_stack *tabsrc, t_stack *duptab);
+int		get_bit(unsigned int nbr, int position);
+int		max_bits(unsigned int nbr);
 int		is_valid_argument(char *str);
 int		contains_space(char *str);
 void	free_split(char **split);
