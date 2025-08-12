@@ -6,25 +6,12 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:10:38 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/12 13:25:56 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/12 16:37:08 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "push_swap.h"
-
-void	print_stack(t_stack *stack)
-{
-	int	i;
-
-	i = 0;
-	while (i < stack->size)
-	{
-		printf("%d\n", stack->tab[i]);
-		i++;
-	}
-}
 
 int	main(int argc, char **argv)
 {
