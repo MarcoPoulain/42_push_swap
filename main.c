@@ -6,7 +6,7 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:10:38 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/11 17:06:47 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/12 13:25:56 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,7 @@ int	main(int argc, char **argv)
 		return (1);
 	}
 	stack_b.size = 0;
-	if (stack_a.size <= 5)
-		sort_small(&stack_a, &stack_b);
-	else if (stack_a.size > 5)
-		sort_big(&stack_a, &stack_b);
+	sort(&stack_a, &stack_b);
 	free_stack(&stack_a);
 	free_stack(&stack_b);
 	return (0);

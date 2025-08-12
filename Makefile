@@ -18,7 +18,8 @@ SRC =	main.c \
 		sort/sort_small_utils.c \
 		sort/sort_utils.c \
 		sort/sort_big_utils.c \
-		sort/sort_big.c
+		sort/sort_big.c \
+		sort/sort.c
 
 OBJ = $(SRC:.c=.o)
 
