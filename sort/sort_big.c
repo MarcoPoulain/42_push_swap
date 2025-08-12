@@ -6,7 +6,7 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 16:31:14 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/11 17:04:44 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/12 15:09:36 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ void	sort_big(t_stack *a, t_stack *b)
 	bubble_sort(duptab->tab, duptab->size);
 	map_in_place(a, duptab);
 	free_stack(duptab);
+	free(duptab);
 	bits = max_bits(a->size - 1);
 	size_init = a->size;
 	bit = 0;
