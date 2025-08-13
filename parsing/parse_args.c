@@ -6,7 +6,7 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 14:48:15 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/06 16:46:23 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/13 16:12:51 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,17 @@ static int	handle_error(char **args, int need_free)
 	write(2, "Error\n", 6);
 	if (need_free)
 		free_split(args);
+	return (0);
+}
+
+int	contains_space(char *str)
+{
+	while (*str)
+	{
+		if (*str == ' ')
+			return (1);
+		str++;
+	}
 	return (0);
 }
 
