@@ -6,11 +6,12 @@
 /*   By: kassassi <kassassi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:10:38 by kassassi          #+#    #+#             */
-/*   Updated: 2025/08/12 16:37:08 by kassassi         ###   ########.fr       */
+/*   Updated: 2025/08/13 12:55:37 by kassassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <unistd.h>
 #include "push_swap.h"
 
 int	main(int argc, char **argv)
@@ -22,6 +23,12 @@ int	main(int argc, char **argv)
 		return (0);
 	if (!parse_args(argc, argv, &stack_a))
 		return (1);
+	if (stack_a.size == 0)
+	{
+		write(2, "Error\n", 6);
+		free_stack(&stack_a);
+		return (1);
+	}
 	stack_b.tab = malloc(sizeof(int) * stack_a.size);
 	if (!stack_b.tab)
 	{
